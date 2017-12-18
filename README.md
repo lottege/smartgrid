@@ -13,9 +13,7 @@ b) Bereken de kosten voor de in a) geconfigureerde wijk. Probeer je grid te opti
 
 Nu is het zo, dat de batterijen misschien niet op de best mogelijke plaatsen staan. Het verplaatsen van batterijen vercompliceert de zaak enorm, maar de opdrachtgever wil het toch proberen, om inzicht in het probleem te krijgen. 
 
-c) Relocate the batteries and try to realise a better result. 
-
-Verplaats de batterijen, en probeer een beter resultaat te realiseren.
+c) Verplaats de batterijen, en probeer een beter resultaat te realiseren.
 
 Het bedrijf SmartBatteryCompany heeft recentelijk drie types batterijen ontwikkeld, met verschillende capaciteiten en verschillende prijzen. 
 
@@ -25,7 +23,7 @@ Het bedrijf SmartBatteryCompany heeft recentelijk drie types batterijen ontwikke
 | Imerse-II 	 |    900 	  | 1350  |
 | Imerse-III 	 |   1800 	  | 1800  |
 
-T Probeer een betere configuratie voor de wijk te vinden met deze batterijen, je mag er zoveel gebruiken als je wil en kunnen op ieder gridpunt zonder huis geplaatst worden. 
+Probeer een betere configuratie voor de wijk te vinden met deze batterijen, je mag er zoveel gebruiken als je wil en kunnen op ieder gridpunt zonder huis geplaatst worden. 
 
 d) Optimaliseer het smartGrid voor de drie wijken. 
 
