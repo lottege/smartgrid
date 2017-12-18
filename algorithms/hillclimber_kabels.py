@@ -53,28 +53,17 @@ for z in range(tries):
             a = random.choice(houses)
             b = random.choice(houses)
 
-
-
         for m in range(20):
             if helpers.check_switch(a, b, batteries[a.battery], batteries[b.battery]):
-                score = helpers.switch_score(a, b, batteries[a.battery], batteries[b.battery], score)
-                # print("best", i ,", cables used = ", score)
-                # print(batteries[a.battery].capacity)
+                score = helpers.switch_score(a, b, batteries[a.battery], batteries[b.battery], score)               
                 i += 1
 
-                # print(new_cost)
         if new_cost < old_cost:
             i += 1
             connected_new = connected
             old_cost = new_cost
             new_cable_list = cable_list
-            print("best", i ,", cables used = ", len(new_cable_list))
-        # else:
-        #     print("expensive")
-        # else:
-        #     for x in batteries:
-        #         print(x.capacity)
-# print(connected)
+       
 for battery in range(len(batteries)):
     print(batteries[battery].capacity)
 for house in range(len(houses)):
@@ -82,9 +71,5 @@ for house in range(len(houses)):
     cable_list.append(cable)
     helpers.connect_to_battery(houses[house], batteries[houses[house].battery], cable_list)
     connected += 1
-    print(houses[house].battery)
 
-for battery in range(len(batteries)):
-    print(batteries[battery].capacity)
-
-print("length", len(cable_list))
+return len(cable_list), houses, batteries, cable_list
