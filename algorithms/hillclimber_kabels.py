@@ -24,7 +24,6 @@ new_cost = old_cost
 batteries = helpers.readtxt("wijk1_batterijen.txt")
 houses = helpers.readcsv("wijk1_huizen.csv")
 
-# Option 1: places cables alongside others (longer dict, no dict checks)
 for battery in range(len(batteries)):
     batteries[battery].number = battery
     for house in range(len(houses)):
