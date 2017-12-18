@@ -6,7 +6,7 @@
 '''
 
 import classes
-import helpers
+from tools import helpers
 import random
 
 
