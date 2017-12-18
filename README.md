@@ -54,8 +54,7 @@ De volgende algoritmes worden gebruikt om de meest optimale oplossing te vinden:
    - Cable list sneller
    - Verre huizen eerst
    - Buiten naar binnen
-   - Hillclimber nieuw
-   - Hillclimber nieuw reserve
+   - Hillclimber kabels
    
 - Door het verplaatsen van de batterijen en toevoegen van batterijen:
 
@@ -78,10 +77,8 @@ De afstand van de batterijen tot de huizen wordt berekend, en vervolgens wordt e
 ## buiten_naar_binnen.py
 In dit algoritme is de aanpak als volgt: de huizen die het verste weg staan van het middelpunt van de wijk, verbinden we als eerst met de dichtstbijzijnde batterij. Net zoals bij het verre_huizen_eerst.py algoritme zou dit voordeliger zijn omdat deze verre huizen het grootste verschil kunnen maken.  
 
-## hillclimber_nieuw.py
-Dit algoritme zorgt ervoor dat er op een optimale manier kabels worden gelegd met behulp van een hillclimber. Er wordt gehillclimbed door vanuit een standaardsetup, van huizen gelinkt aan batterijen, random twee huizen van batterij te switchen en te kijken of dat een betere score oplevert. Het totaal aantal scoreberekeningen kan worden gemanipuleerd. Onderin het bestand worden de kabels voor de beste huis-batterij combinatie gelegd. 
 
-## hillclimber_nieuw_reserve.py
+## hillclimber_kabels.py
 Dit algoritme zorgt ervoor dat er op een optimale manier kabels worden gelegd. Het is een combinatie van een random restart en een hillclimber. Op deze manier wordt de random restart geoptimaliseerd door er een hillclimber op toe te passen. Er wordt gehillclimbed door vanuit een random standaardsetup, van huizen gelinkt aan batterijen, random twee huizen van batterij te switchen en te kijken of dat een betere score oplevert. Er kan worden gemanipuleerd hoe vaak er een random restart wordt toegepast en het totaal aantal scoreberekeningen kan worden gemanipuleerd. Onderin het bestand worden de kabels voor de beste huis-batterij combinatie gelegd. 
 
 ## batterij_plaatsen.py
