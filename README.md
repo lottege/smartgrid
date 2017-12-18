@@ -53,22 +53,25 @@ De volgende algoritmes worden gebruikt om de meest optimale oplossing te vinden:
 - Door het plaatsen van kabels op de grid:
 
    - Cable list
-   - Cable list sneller en korter
+   - Cable list sneller
    - Verre huizen eerst
    - Buiten naar binnen
    - Hillclimber nieuw
+   - Hillclimber nieuw reserve
    
 - Door het verplaatsen van de batterijen en toevoegen van batterijen:
 
-   - Batterijen plaatsen met random start
+   - Batterijen plaatsen
    - Batterijen plaatsen mbv hillclimber
+   - Batterijen allerlei
+   - Brute force batterijen
    - Batterijen plaatsen met combinatie van random restart en hillclimber
-   - Batterij allerlei
+ 
    
 ## cable_list.py
 Cable list verbindt huizen met batterijen. Hierbij wordt er bij het eerste huis in de lijst begonnen, dit huis wordt verbonden met de eerste batterij uit de lijst. De huizen en batterijen staan op dezelfde volgorde in de lijst als dat ze worden aangeleverd. De lijst met huizen wordt afgewerkt, wanneer de batterij zijn volledige capaciteit heeft bereikt, wordt er overgestapt naar de volgende batterij in de lijst.
 
-## cable_list_sneller_korter.py
+## cable_list_sneller.py
 Dit is een code die de huizen met de batterijen verbindt op een effectievere manier. Met de functie distance_sort wordt de afstand tussen de batterijen en de huizen berekend. Vervolgens wordt per batterij gekeken welk huis de kortste afstand heeft tot de betreffende batterij. Het huis dat het dichtste bij de batterij staat wordt verbonden, hierna het huis met de een na kleinste afstand tot de batterij enz enz. 
 
 ## verre_huizen_eerst.py
